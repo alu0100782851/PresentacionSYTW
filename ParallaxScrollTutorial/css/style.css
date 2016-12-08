@@ -203,6 +203,12 @@ body{
 		font-size: 50px;
 	}
 
+	.demo{
+		font-family: 'Indie Flower', cursive;
+		font-size: 30px;
+		margin-top: 40px;	
+		display: block;
+	}
 
 
 img{
