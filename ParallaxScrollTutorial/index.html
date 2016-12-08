@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Parallax Scrolling</title>
+		
+		<!-- CSS Code -->
+		<!--<link rel="stylesheet" href="plugin/jInvertScroll/dist/css/jInvertScroll.css">-->	
+		<link rel="stylesheet" href="css/style.css">
+
+
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	</head>
+	<body>
+
+	    <!-- secciones -->
+	    <section id="seccion1">
+			<span class="name">PARALLAX SCROLLING</span>
+		</section>
+	    
+	    <div>
+		    <div class="titulo">
+				<h3>Tutorial Parallax</h3>
+			</div>
+		    <div class="tuto">
+				<p>El parallax scrolling es una técnica de diseño web que permite animar con movimientos todos los elementos de una página, al mismo tiempo o por separado, mientras te desplazas en ella haciendo scroll. Este efecto se logra colocando todos los elementos de una web por capas, así si quieres mover solo el texto y dejar estático el fondo lo puedes hacer. Además, ofrece al usuario una experiencia mucho más enriquecida y atractiva a la vista mientras navega por la web reteniéndolo más tiempo que quizá una web habitual. Sin embargo, hay que tener en cuenta que esta tecnología suele utilizar imágenes grandes, con lo cual hay que saberlas comprimir bien para mantenerla ligera de carga <br><br>Por otro lado, dado que existen dos tipos de scroll, el vertical y el horizontal, nos encontramos con dos tipos de parallax, aquellas en el que la transición de pantallas se hace a través de un movimiento vertical y las que se suceden en movimiento horizontal. La más común es el efecto de scroll vertical.</p>
+			</div>	
+	    </div>
+
+		<!-- SCROLLING VERTICAL -->
+		<section id="seccion2">
+			<div class="caption">
+				<span class="name2">SCROLL VERTICAL</span>
+			</div>
+		</section>
+		
+		
+	    <div class="contenedor2">
+		    <div class="titulo">
+				<h3>Configuración</h3>
+			</div>
+			<div id="intro">
+				<div class="estructura">
+					<h4>Estructura</h4>
+					<p>Para llevar a cabo este diseño lo primero que tendremos que hacer es crear una estructura de ficheros y directorios similar a la siguiente:</p>
+					<img src="images/estructura.png"></img>
+				</div>
+				
+				<div class="html">
+					<h4>HTML</h4>
+					<p>En el fichero html es recomendable dividir el contenido en secciones mediante la propiedad section aunque también se podría hacer mediante divs u otros elementos de html5. En cada sección se puede poner todo el contenido que se desee, incluso entre medio de las secciones, como vemos en esta página, también podemos colocar contenido. </p>
+					<p>Finalmente tendremos un html similar al siguiente: </p>
+					<img src="images/html.png"></img>
+				</div>
+				
+				<div class="css">
+					<h4>CSS</h4>
+					<p>En este ejemplo en el css es donde realmente se consigue el efecto parallax. Para ello en cada una de las secciones tendremos que colocar una imagen como fondo y encima de ella estará el contenido que nosotros queramos.</p>
+					<img src="images/css.jpg"></img>
+					<p>Este código lo que hace es poner una imagen en la seccion1, la cual será nuestra imagen de fondo. Ademas hace que esa imagen esté fija al viewport (área visible de nuestro navegador), que este centrada, no se repita y cubra todo el fondo. Por último, se le aplica un tamaño fijo de 1000px, este valor puede variar según nuestras necesidades.</p>
+					<p>De las propiedades anteriores la que más nos interesa y con la que se consigue realmente el efecto parallax es la de background-attachment: fixed, puesto que esta propiedad mantiene el fondo fijo que es precisamente lo que queremos para que al hacer scroll los elementos que se encuentren sobre ese fondo “adquieran movimiento” respecto del mismo.</p>
+				</div>
+			</div>
+	    </div>
+		
+		
+		
+		<!-- SCROLLING HORIZONTAL -->
+		<section id="seccion3">
+			<div class="caption">
+				<span class="name2">SCROLL HORIZONTAL</span>
+			</div>
+		</section>
+		
+		<div id="wrap" class="">
+		    <div class="titulo">
+				<h3>Configuración</h3>
+			</div>
+			<div class="frame" id="basic">
+				<ul class="clearfix">
+					<li>
+						<div id="elem1" class="elementos">
+							<h4>Parallax Horizontal</h4>
+							<p>Para llevar a cabo el efecto parallax de forma horizontal hemos usado el plugin Sly el cual podemos descargar, además de ver algunos ejemplos de su uso, en el siguiente enlace <a href="http://darsa.in/sly/">Sly</a>. <br>Con este plugin lo que conseguimos es que el desplazamiento horizontal sea mucho mas sencillo de hacer.</p>
+							
+							<h5>¿Qué es Sly?</h5>
+							<p>Sly es una biblioteca de JavaScript para desplazamiento avanzado unidireccional con soporte de navegación basado en elementos.<br>Se puede utilizar como un simple reemplazo de la barra de desplazamiento, como un elemento avanzado basado en la herramienta de navegación, o como una gran interfaz de navegación y animación para los sitios web que usen parallax. Esto se logra mediante una poderosa y amigable API de desarrollo que proporciona un montón de métodos muy útiles que le dan control sobre todo.</p>
+							
+							<h5>Dependencias</h5>
+							<p>JQuery 1.7+</p>
+							
+							<h5>Compatibilidad</h5>
+							<p>Sly funciona en cualquier navegador de escritorio, incluso en IE6.</p>
+							
+							<h5>Móvil</h5>
+							<p>Actualmente no funcional en dispositivos móviles</p>
+						</div>	
+					</li>
+					<li>
+						<div id="elem2" class="elementos">
+							<h4>Estructura</h4>
+							<p>La estructura de directorios que debemos generar es bastante similar que en el caso anterior con la diferencia de que para hacer el movimiento horizontal con parallax será necesario aplicar javascript. Por tanto, la estructura quedaría de la siguiente forma:</p>
+							<img src="images/estructurah.png"></img>
+						</div>
+					</li>
+					<li>
+						<div class="elementos">
+							<h4>HTML</h4>
+							<p>En el documento index.html tendremos un fichero html estructurado de la forma que nosotros queramos, solo debemos tener en cuenta que se deben incluir los ficheros javascript del plugin correctamente y la seccion que se vaya a utilizar con parallax horizontal debe estar estructurada usando elementos div,ul y li.</p>
+							<p>En cada uno de los li tendremos lo que en el ejemplo de parallax vertical eran nuestras secciones de esta forma conseguiremos tener el contenido nuevamente divido por secciones</p>
+							
+							<p>Por otro lado, si no queremos poner ningun tipo de contenido si no que queremos generar el efecto parallax unicamente con imagenes simplemente bastará con sobreponer unas imagenes sobre otras y aplicarle la propiedad fixed a aquellas que conformen el fondo</p>
+
+						</div>	
+					</li>
+					<li>
+						<div id="elem4" class="elementos">
+							<h4>HTML</h4>
+							<p>El documento html deberia tener una estructura similar a la siguiente, aunque puede ser modificada. Para mas info: <a href="https://github.com/darsain/sly/blob/master/docs/Markup.md">Sly Documentation</a></p>
+							<img src="images/htmlh.png"></img>
+						</div>	
+					</li>
+					<li>
+						<div class="elementos">
+							<h4>CSS</h4>
+							<p>En la hoja de estilos debemos aplicar a nuestro fondo la propiedad background-attachment con valor fixed y ademas de esto aplicar los estilos siguientes a los elementos ul y li para que se vean y se recorran de forma horizontal.<br>Como vemos en la imagen esto se consigue mediante la propiedad float:left, nuevamente nos damos cuenta de que para llevar a cabo un efecto parallax no es necesario el empleo de tecnicas costosas sino que con simples propiedades css y algo de javascript (en este caso) puede conseguirse.</p>
+							<img src="images/cssh.png"></img>
+						</div>
+					</li>
+					<li>
+						<div class="elementos">
+							<h4>JQuery</h4>
+							<p>En este ejemplo en el css es donde realmente se consigue el efecto parallax. Para ello en cada una de las secciones tendremos que colocar una imagen como fondo y encima de ella estará el contenido que nosotros queramos.</p>
+							<img src="images/css.jpg"></img>
+							<p>Este código lo que hace es poner una imagen en la seccion1, la cual será nuestra imagen de fondo. Ademas hace que esa imagen esté fija al viewport (área visible de nuestro navegador), que este centrada, no se repita y cubra todo el fondo. Por último, se le aplica un tamaño fijo de 1000px, este valor puede variar según nuestras necesidades.</p>
+							<p>De las propiedades anteriores la que más nos interesa y con la que se consigue realmente el efecto parallax es la de background-attachment: fixed, puesto que esta propiedad mantiene el fondo fijo que es precisamente lo que queremos para que al hacer scroll los elementos que se encuentren sobre ese fondo “adquieran movimiento” respecto del mismo.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+	    </div>
+		
+		
+		
+		<!-- INTEGRACION EN MATERIALIZE -->
+		<section id="seccion4">
+			<div class="caption">
+				<span class="name2">PARALLAX y MATERIALIZE</span>
+			</div>
+		</section>
+		
+		<div class="contenedor3">
+		    <div class="titulo">
+				<h3>Configuración</h3>
+			</div>
+			<div id="intro">
+				<div class="estructura">
+					<h4>Estructura</h4>
+					<p>La estructura sera practicamente la misma que en los dos casos anteriores solo que aqui añadiremos los css y js que materialize necesita. En este caso materialize nos facilita bastante el trabajo y añadiendo algunas pocas lineas tendremos el efecto parallax creado.<br>Los directorios y ficheros que deberiamos tener en nuestra carpeta serán los siguientes:</p>
+					<img src="images/estructuram.png"></img>
+					<p>Como vemos en la imagen dentro de la carpeta css hemos añadido los ficheros css propios de materialize y ademas un fichero style.css, este ultimo será nuestro fichero de estilos. Cabe destacar que para hacer cambios en el css que provee materialize debemos buscar en la hoja de materialize el elemento que queremos modificar y copiar el codigo css y pegarlo en nuestra hoja de estilos. Hecho esto modificaremos esos estilos desde nuestro fichero para que los cambios surtan efecto.</p>
+				</div>
+				
+				<div class="html">
+					<h4>HTML</h4>
+					<p>El html que tenemos sigue la estructura que nos indica materialize, añadiendo a cada elemento las clases correspondientes para poder llevar a cabo el efecto parallax. </p>
+					<p>El html siguiendo las indicaciones <a href="http://materializecss.com/parallax.html">aqui descritas</a> presenta la estructura siguiente: </p>
+					<img src="images/htmlm.png"></img>
+				</div>
+				
+				<div class="css">
+					<h4>CSS</h4>
+					<p>El apartado del css para este ejemplo no es necesario modificarlo, si queremos dejar los estilos que materialize nos proporciona podemos hacerlo dado que no influyen para que el efecto parallax funcione. </p>
+					<p>En caso de que queramos modificarlos como ya se ha explicado anteriormente seguiremos una serie de pasos. A continuacion se explican los pasos a seguir para cambiar el tamaño del div con clase parallax-container (con otros elementos la dinamica es la misma): </p>
+					<ol>
+						<li>
+							<p>Copiar el codigo css correspondiente al elemento que queremos modificar: </p>
+							<img src="images/paso1.png"></img>
+						</li>
+						<li>
+							<p>Pegarlo en nuestra hoja de estilo propia: </p>
+							<img src="images/paso2.png"></img>
+						</li>
+						<li>
+							<p>Modificar los estilos existentes o añadir nuevos: </p>
+							<img src="images/paso3.png"></img>
+						</li>
+					</ol>
+				</div>
+				
+				<div class="js">
+					<h4>JavaScript</h4>
+					<p>En el primer ejemplo veiamos que no era necesario usar javascript, sin embargo con materialize si que es necesario. Lo bueno es que para el efecto parallax en concreto solo son necesarias apenas tres lineas de codigo, ¿bastante sencillo no? </p>
+					<p>Esas lineas las añadiremos a nuestro fichero index.js puesto que como ya sabemos no es posible modificar los ficheros de materialize. Dicho esto introducimos las lineas siguientes a nuestro js y con eso ya tendremos el efecto parallax </p>
+					<img src="images/jsm.png"></img>
+				</div>
+			</div>
+	    </div>		
+		
+		
+		
+		<section id="seccion5">
+			<span class="name3">Fin del tutorial</span>
+		</section>
+
+
+
+
+		<!-- JS Code -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/sly.min.js"></script>
+		<script src="js/horizontal.js"></script>
+	</body>
+</html>

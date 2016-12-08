@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+}
+
+
+body{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+	width: 100%;
+}
+
+
+/*Estilos secciones*/
+	#seccion1{
+		background: url("../images/parallax.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  	min-height: 1000px;	
+	}
+	
+	#seccion2, #seccion3, #seccion4{
+		background: url("../images/weather.png") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  	min-height: 1000px;
+	}
+	
+	#seccion5{
+		background: url("../images/parallax.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  	min-height: 1000px;
+	}
+	
+	.contenedor2{
+		background: url("../images/papel-textura.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+	
+	.contenedor3{
+		background: url("../images/papel-textura.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+
+
+
+/*CSS PARALLAX HORIZONTAL*/
+	.wrap {
+	  position: relative;
+	  margin: 3em 0;
+	}
+	
+	
+	/* Frame */
+	.frame {
+		height: 1000px;
+		overflow: hidden;
+		background: url("../images/papel-textura.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: 'Indie Flower', cursive;
+		font-size: 20px;
+	}
+	
+	.frame ul {
+	  list-style: none;
+	  margin: 40px 0 0 0;
+	  padding: 0;
+	  height: 100%;
+	  /*font-size: 50px;*/
+	}
+	
+	.frame ul li {
+	  float: left;
+	  width: 800px;
+	  height: 100%;
+	  margin: 0 1px 0 0;
+	  padding: 20px;
+	  background: transparent/*#333*/;
+	  color: black/*#ddd*/;
+	  cursor: pointer;
+	}
+	
+	.elementos img{
+		margin-top: 15px;
+		padding-left: 10px;	
+	}
+	
+	.elementos p {
+		text-align: justify;
+		margin-top: 10px;
+		padding: 10px 10px 0 10px; 
+	}
+	
+	.elementos h4{
+		text-align: center;
+	}
+	
+	#elem1 p{
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+
+
+
+/*TITULOS*/
+	.titulo{
+		background-color: grey;
+		width: 100%;
+		height: 50px;
+		margin-top: -15px;
+	}
+	
+	h3 {
+		color: white;/* #111;*/
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font: 15px "Lato", sans-serif;
+		position: absolute;
+		margin-left: 10px;
+		margin-top: 15px;
+	}
+	
+	h4{
+		text-transform: uppercase;
+		font: 35px 'Hammersmith One', sans-serif;
+		margin-bottom: 10px;
+	}
+	
+	h5{
+		font-size: 20px;
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+
+	.estructura h4, .html h4, .css h4, .js h4{
+		text-align: center;
+	}
+
+
+
+/*CONTAINERS EPIGRAFES*/
+	#intro{
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 50px;
+		height: 100%;
+	}
+
+	.tuto, .estructura, .html, .css, .js{
+		background-color: transparent;
+		padding:50px 80px;
+		color: black;
+		text-align: justify;
+		font-size: 20px;
+	}
+
+
+/*PARRAFOS y SPAN*/
+	.contenedor2 p, .contenedor3 p{
+		font-family: 'Indie Flower', cursive;/*font-family: 'Homemade Apple', cursive;*/
+		font-size: 20px;
+		margin-top: 15px;
+	}
+	
+	.name{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		color: white;
+		font-size: 50px;
+	}
+	
+	.name2{
+		position: absolute;
+		margin-top: 25%;
+		width: 100%;
+		color: #111;
+		text-align: center;
+		font-size: 50px;
+	}
+	
+	.name3{
+		position: absolute;
+		margin-top: 25%;
+		width: 100%;
+		color: white;
+		text-align: center;
+		font-size: 50px;
+	}
+
+
+
+img{
+	opacity: 0.8;
+}

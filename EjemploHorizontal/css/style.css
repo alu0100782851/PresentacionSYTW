@@ -1,0 +1,50 @@
+body{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+.wrap {
+  position: relative;
+  margin: 3em 0;
+}
+
+.frame {
+	height: 100%;
+	overflow: hidden;
+	background: url("../images/papel-textura.jpg") 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+}
+
+.frame ul {
+  list-style: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+  height: 100%;
+}
+
+.frame ul li {
+  float: left;
+  width: 400px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 20px;
+  background: transparent/*#333*/;
+  color: black/*#ddd*/;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

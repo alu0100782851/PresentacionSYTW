@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+
+
+body{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+	width: 100%;
+}
+
+
+/*Estilos secciones*/
+	#seccion1, #seccion3{
+		background: url("../images/parallax.jpg") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  	min-height: 1000px;	
+	}
+	
+	#seccion2{
+		background: url("../images/weather.png") 100% 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  	min-height: 1000px;
+	}
+	
+	.container1{
+		height: 100%;
+	}
+
+
+
+/*TITULOS*/
+	.titulo{
+		background-color: grey;
+		width: 100%;
+		height: 50px;
+		margin-top: -15px;
+	}
+	
+	h3 {
+		color: white;/* #111;*/
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font: 15px "Lato", sans-serif;
+		position: absolute;
+		margin-left: 10px;
+		margin-top: 15px;
+	}
+
+
+
+/*PARRAFOS y SPAN*/
+	.name{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		color: white;
+		font-size: 50px;
+	}
+	
+	.name2{
+		position: absolute;
+		margin-top: 25%;
+		width: 100%;
+		color: #111;
+		text-align: center;
+		font-size: 50px;
+	}
+	
+	.name3{
+		position: absolute;
+		margin-top: 25%;
+		width: 100%;
+		color: white;
+		text-align: center;
+		font-size: 50px;
+	}
