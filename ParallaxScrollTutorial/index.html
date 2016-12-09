@@ -5,7 +5,6 @@
 		<title>Parallax Scrolling</title>
 		
 		<!-- CSS Code -->
-		<!--<link rel="stylesheet" href="plugin/jInvertScroll/dist/css/jInvertScroll.css">-->	
 		<link rel="stylesheet" href="css/style.css">
 
 
@@ -132,12 +131,19 @@
 					</li>
 					<li>
 						<div class="elementos">
-							<h4>JQuery</h4>
-							<p>En este ejemplo en el css es donde realmente se consigue el efecto parallax. Para ello en cada una de las secciones tendremos que colocar una imagen como fondo y encima de ella estará el contenido que nosotros queramos.</p>
-							<img src="images/css.jpg"></img>
-							<p>Este código lo que hace es poner una imagen en la seccion1, la cual será nuestra imagen de fondo. Ademas hace que esa imagen esté fija al viewport (área visible de nuestro navegador), que este centrada, no se repita y cubra todo el fondo. Por último, se le aplica un tamaño fijo de 1000px, este valor puede variar según nuestras necesidades.</p>
-							<p>De las propiedades anteriores la que más nos interesa y con la que se consigue realmente el efecto parallax es la de background-attachment: fixed, puesto que esta propiedad mantiene el fondo fijo que es precisamente lo que queremos para que al hacer scroll los elementos que se encuentren sobre ese fondo “adquieran movimiento” respecto del mismo.</p>
-							<span class="demo">Demo: <a href="https://alu0100782851.github.io/PresentacionSYTW/EjemploHorizontal/">ParallaxHorizontal</a></span>
+							<h4>JavaScript</h4>
+							<p>Para la parte del javascript incluiremos en nuestro js las lineas que vemos en la imagen siguiente</p>
+							<ol>
+								<li class="li">$('#basic').sly --> aquí sustituiremos basic por el id que tenga nuestro contenedor principal</li>
+								<li class="li">startAt: 0 indica el elemento a partir del cual empezaremos el movimiento horizontal</li>	
+								<li class="li">speed como la propia palabra indica es para controlar la velocidad a la que se lleva a cabo el desplazamiento</li>
+								<li class="li">activateOn: 'click' permite determinar cuando un elemento está activo o no</li>
+								<li class="li">...</li>
+							</ol>
+							<img src="images/jsh.png"></img>
+							
+							<p>En el siguiente enlace podemos encontrar un ejemplo de parallax horizontal con otro plugin denominado Skrollr</p>
+							<span class="demo">Demo: <a href="https://alu0100782851.github.io/PresentacionSYTW/EjemploHorizontal/">ParallaxHorizontal con Skrollr</a></span>
 						</div>
 					</li>
 				</ul>
