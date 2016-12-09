@@ -64,7 +64,7 @@ body{
 	
 	/* Frame */
 	.frame {
-		height: 1000px;
+		/*height: 1000px;*/
 		overflow: hidden;
 		background: url("../images/papel-textura.jpg") 100% 100%;
 		background-attachment: fixed;
@@ -210,6 +210,17 @@ body{
 		display: block;
 		
 	}
+
+
+/*LISTAS*/
+.elementos ol{
+	margin-bottom: -15px;
+}
+
+.elementos ol .li{
+	margin-bottom: -35px;
+	width: 100%;
+}
 
 
 img{

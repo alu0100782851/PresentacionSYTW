@@ -1,50 +1,103 @@
-body{
-	height: 100%;
-	margin: 0;
-	font: 400 15px/1.8 "Lato", sans-serif;
-	color: #777;
-}
-
-.wrap {
-  position: relative;
-  margin: 3em 0;
-}
-
-.frame {
-	height: 100%;
-	overflow: hidden;
-	background: url("../images/papel-textura.jpg") 100% 100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: 'Indie Flower', cursive;
-	font-size: 50px;
-}
-
-.frame ul {
-  list-style: none;
-  margin: 40px 0 0 0;
-  padding: 0;
-  height: 100%;
-}
-
-.frame ul li {
-  float: left;
-  width: 400px;
-  height: 100%;
-  margin: 0 1px 0 0;
-  padding: 20px;
-  background: transparent/*#333*/;
-  color: black/*#ddd*/;
-  cursor: pointer;
+*{
+    margin: 0;
 }
 
 
+/*.s{
+    position:fixed;
+    width:100%;
+    height:100%;
+}*/
+
+#slides {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0); 
+    transform: translate(0,0); 
+
+    font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+}
+
+.slide {
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:50%;
+}
+#slide-1 {
+    background: url("../images/fondogrey.jpg") no-repeat center center;
+    background-size: cover;
+}
+#slide-2 {
+    background: url("../images/fondogrey.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,0%);
+    -ms-transform: translate(100%,0%); 
+    transform: translate(100%,0%);
+}
+#slide-3 {
+    background: url("../images/fondogrey.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(200%,0%);
+    -ms-transform: translate(200%,0%); 
+    transform: translate(200%,0%);
+}
 
 
+.elementos{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    float: left;
+    
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color:black;
+}
 
+.smallimg{
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
 
+.bigimg{
+    max-width: 90%;
+    max-height: 50%;
+    width: 90%;
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
 
+.elementos p {
+	text-align: justify;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	padding: 10px 10px 0 10px; 
+}
 
+.elementos h4{
+	text-align: center;
+}
 
+.elementos h5{
+    margin-left: 10px;
+}
 
+#ol{
+    margin-bottom: 20px;
+}

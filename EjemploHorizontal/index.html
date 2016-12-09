@@ -12,38 +12,82 @@
 		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 	</head>
-	<body>
+    <body>
 
-        <div class="frame" id="basic">
-            <ul class="clearfix">
-                <li>0</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-            </ul>
-        </div>
+        <div id="" class="">
+			<div id="slides" data-0="transform:translate(0%,0%);" data-150p="transform:translate(-50%,0%);" data-300p="transform:translate(-100%,0%);">
+			    
+			    <!-- SLIDE 1 -->
+                <div id="slide-1" class="slide">
+					<div id="elem1" class="elementos">
+						<h4>Parallax Horizontal</h4>
+						<p>Para llevar a cabo el efecto parallax de forma horizontal hemos usado el plugin Skrollr el cual podemos descargar, además de ver algunos ejemplos de su uso, en el siguiente enlace <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. <br>Con este plugin conseguimos que el desplazamiento horizontal sea mucho mas sencillo, ademas de permitir un diseño responsivo.</p>
+						
+						<h5>¿Qué es Skrollr?</h5>
+						<p>Skrollr es una completa biblioteca de animación de desplazamiento para móviles (Android + iOS) y escritorio escrito simplemente JavaScript. Esta biblioteca javascript le permite animar cualquier propiedad CSS de cualquier elemento en función de la posición de la barra de desplazamiento horizontal.</p>
+						
+						<h5>Consideraciones iniciales</h5>
+						<p>Debe incluir el archivo skrollr.min.js en la parte inferior del documento (justo antes del cierre del body) y luego llamar a skrollr.init (). O puede colocarlo dentro del head si lo desea, pero asegúrese de llamar a init () una vez que el documento se ha cargado.</p>
+						
+						<h5>Enlace a documentacion</h5>
+						<p><a href="https://github.com/Prinzhorn/skrollr#documentation">Documentation</a></p>
+						
+						<h5>Móvil</h5>
+						<p>Comenzando con la versión 0.5.0 skrollr soporta oficialmente navegadores móviles incluyendo Android e iOS. Además, el soporte móvil se ha reescrito desde cero para skrollr 0.6.0.</p>
+					</div>
+					<div id="elem2" class="elementos">
+						<h4>Estructura</h4>
+						<p>La estructura de directorios que debemos generar es la misma que usariamos para cualquier diseño web. Como vemos en la imagen siguiente hemos incluido el fichero main.js (nuestro fichero javascript) y skrollr.js que es el fichero javascript que necesita skrollr para funcionar.</p>
+                        <img class="smallimg" src="images/estructura.png"></img>  
+					</div>
+				</div>
+				
+				<!-- SLIDE 2 -->
+				<div id="slide-2" class="slide">
+					<div id="elem3" class="elementos">
+						<h4>HTML</h4>
+						<p>En el documento index.html tendremos un fichero html estructurado de la forma que nosotros queramos, solo debemos tener en cuenta que se deben incluir los ficheros javascript del plugin correctamente e incluir las clases oportunas en los elementos que se vayan a usar para el efecto de movimiento horizontal.</p>
+						<p>En cada uno de los elementos usados para el efecto parallax horizontal tendremos que añadir los siguientes aspectos: </p>
+						<ol id="ol">
+						    <li>El id="slides" para el elemento que contiene al resto</li>
+						    <li>Para los elementos que estan dentro ese contenedor debemos añadir un id con nombre el que nosotros queramos y una class="slide"</li>
+						</ol>
+						
+						<p id="par">Dentro de cada uno de los elementos podemos poner el contenido que queramos y para ello se puede emplear el elemento de html que queramos, por ejemplo h1, div1, etc.</p>
+
+					</div>
+					<div id="elem4" class="elementos">
+						<h4>HTML</h4>
+						<p>El documento html deberia tener una estructura similar a la siguiente, aunque puede ser modificada. Para mas info: <a href="https://github.com/Prinzhorn/skrollr#documentation">Skrollr Documentation</a></p>
+						<img class="bigimg" src="images/html.png"></img>
+					</div>	
+				</div>
+				
+				<!-- SLIDE 3 -->
+				<div id="slide-3" class="slide">
+					<div id="elem5" class="elementos">
+						<h4>CSS</h4>
+						<p>En la hoja de estilos debemos aplicar los estilos que nos indica skrollr para las clases e id que añadimos anteriormente.<br><br>Como vemos en la imagen es necesario aplicar la propiedad transform con valor translate para movernos horizontalmente(también puede usarse translateX)</p>
+						<img class="bigimg" src="images/css.png"></img>
+					</div>
+					<div id="elem6" class="elementos">
+						<h4>JavaScript</h4>
+						<p>La parte de javascript es bastante sencilla, con skrollr bastará con añadir la línea de código que se expone a continuación para conseguir el efecto deseado.</p>
+						<img class="smallimg" src="images/javascript1.png"></img>
+						<br><p>Nota: Para que todo funcione correctamente no debemos olvidarnos de añadir en el html el fragmento de codigo siguiente: </p>
+						<img class="smallimg" src="images/javascript2.png"></img>
+					</div>
+				</div>
+			
+			</div>
+	    </div>
         
-        		<!-- JS Code -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/sly.min.js"></script>
-		<script src="js/horizontal.js"></script>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/main.js"></script>
 	</body>
 </html>
-
-
 
 
 
